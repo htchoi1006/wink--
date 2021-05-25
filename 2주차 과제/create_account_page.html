@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'/>
+  <title>Sign up page</title>
+
+  <style>
+    html { width: 100%; }
+    body { background-color: rgb(229, 232, 238); }
+    #header-div { width: 100%; margin: 20px auto; padding: 20px; padding-bottom: 40px; background-color: rgb(244, 245, 247); width: 400px; height: 100px; text-align: center;
+                  border-style: solid; border-width: 1px; border-color: rgb(204, 208, 212)}
+    .body-div { width: 100%; margin: 20px auto;  padding: 30px; background-color: rgb(244, 245, 247); width: 380px; height: 600px;
+                border-style: solid; border-width: 1px; border-color: rgb(204, 208, 212)}
+    #full-name { width: 100%; height: 40px;  margin-bottom: 20px; padding-left: 10px; border-style: solid; border-width: 1px; border-color: rgb(204, 208, 212)}
+    #full-email { width: 100%; height: 40px; margin-bottom: 20px; padding-left: 10px; border-style: solid; border-width: 1px; border-color: rgb(204, 208, 212)}
+    #full-password { width: 100%; height: 40px; margin-bottom: 20px; padding-left: 10px; border-style: solid; border-width: 1px; border-color: rgb(204, 208, 212)}
+    .month-form-row { display: flex; justify-content: space-between; width: 100%; height: 50px; margin-bottom: 20px; }
+    #birth { color: grey; margin-bottom: 2px;}
+    #month { width: 180px; border-color: rgb(204, 208, 212); color: grey; }
+    #birth_day { width: 60px; border-style: solid; border-width: 1px; border-color: rgb(204, 208, 212); padding-left: 10px;}
+    #birth_year { width: 90px; border-style: solid; border-width: 1px; border-color: rgb(204, 208, 212); padding-left: 10px;}
+    #gender { margin-bottom: 30px; color: grey; }
+    #terms { font-size: 13px; margin-top: 20px; }
+    a:link { color: green; text-decoration: none;}
+    a:visited { color: green; text-decoration: none;}
+    a:hover { color: green; text-decoration: underline;}
+    #signup-div { text-align: center; margin-top: 50px;}
+    #signup-btn { width: 300px; height: 50px; border-radius: 30px; border-width: 0px; background-color: green; color: white;}
+    #facebooksignup-div { text-align: center; margin-top: 30px;}
+    #facebooksignup-btn { width: 300px; height: 50px; border-radius: 30px; border-width: 0px; background-color: midnightblue; color: white;}
+
+
+
+  </style>
+
+</head>
+<body>
+<header class='form-header'>
+  <div id="header-div">
+    <h1>106hht 📮</h1>
+    <h3>Create a New Account</h3>
+  </div>
+</header>
+
+<div class="body-div">
+  <div>
+    <input id='full-name' name='full-name' type='text' placeholder="Name"/>
+  </div>
+  <div>
+    <input id='full-email' name='email' type='email' placeholder='Email'/>
+  </div>
+  <div>
+    <input id='full-password' name='password' type='password' placeholder='Password'/>
+  </div>
+  <p id="birth">Date of birth:</p>
+  <div class='month-form-row'>
+    <select id="month" >
+      <option disabled selected hidden value="">Month</option>
+      <option value="january">January</option>
+      <option value="february">February</option>
+      <option value="march">March</option>
+      <option value="april">April</option>
+      <option value="may">May</option>
+      <option value="june">June</option>
+      <option value="july">July</option>
+      <option value="august">August</option>
+      <option value="september">September</option>
+      <option value="october">October</option>
+      <option value="november">November</option>
+      <option value="december">December</option>
+    </select>
+    <input type='text' id='birth_day' placeholder="Day">
+    <input type='text' id='birth_year' placeholder="Year">
+  </div>
+  <div id="gender">
+    <label>
+      <input type="radio" name="gender">
+      Male
+    </label>
+    <label>
+      <input type="radio" name="gender">
+      Female
+    </label>
+  </div>
+
+  <p id="terms">By clicking on Sign up, you agree to this page's <span id="terms-span"><a href="https://www.naver.com">Terms and Conditions of Use</a></span></p>
+  <div id="signup-div">
+    <button id="signup-btn">SIGN UP</button>
+  </div>
+  <div id="facebooksignup-div">
+    <button id="facebooksignup-btn">SIGN UP WITH FACEBOOK</button>
+  </div>
+</div>
+</body>
+</html>
